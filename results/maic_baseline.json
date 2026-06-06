@@ -1,0 +1,57 @@
+{
+  "method": "MAIC_approx (IC formula)",
+  "reference": "MAIC, Baillie lab (github.com/baillielab/maic); IC = -log2(rank/n_genes)",
+  "trained_on_real_data": true,
+  "provenance_hash": "7ec08b796886e5a165ac5abc85fd075e431e807328cabccaaf242983ed8428c5",
+  "data_release": "DepMap Public 26Q1 (Broad) + Sanger Project Score (Chronos), common cell lines",
+  "n_genes_scored": 16910,
+  "n_abstained_pairs": 3255,
+  "auroc_overall": 0.9045,
+  "auroc_cross_lab": 0.9191,
+  "auroc_cross_context": 0.9123,
+  "auroc_cross_study": 0.7378,
+  "abstention_rate": 0.0697,
+  "by_stratum": {
+    "cross_cell_type": {
+      "n": 219,
+      "n_kept": 205,
+      "abstention_rate": 0.0639,
+      "base_rate": 0.5342,
+      "auroc": 0.5447,
+      "ece": 0.1368
+    },
+    "cross_context": {
+      "n": 11536,
+      "n_kept": 11536,
+      "abstention_rate": 0.0,
+      "base_rate": 0.7357,
+      "auroc": 0.9123,
+      "ece": 0.3123
+    },
+    "cross_lab": {
+      "n": 19097,
+      "n_kept": 19097,
+      "abstention_rate": 0.0,
+      "base_rate": 0.7649,
+      "auroc": 0.9191,
+      "ece": 0.3421
+    },
+    "cross_study": {
+      "n": 15712,
+      "n_kept": 12548,
+      "abstention_rate": 0.2014,
+      "base_rate": 0.2526,
+      "auroc": 0.7378,
+      "ece": 0.1937
+    },
+    "cross_study_same_cell": {
+      "n": 142,
+      "n_kept": 65,
+      "abstention_rate": 0.5423,
+      "base_rate": 0.2324,
+      "auroc": 0.7462,
+      "ece": 0.4321
+    }
+  },
+  "note": "MAIC_approx (IC formula) used because the maic package expects categorised ranked-list files, not a gene-effect matrix; see citation. Unsupervised, gene-level, no context-pair conditioning."
+}

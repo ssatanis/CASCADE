@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Real data — large, pinned by sha256 in data/PROVENANCE.json, re-fetchable via data/acquire.py
+data/*
+*.h5ad
+*.tar.gz
+
+# Trained artifacts — large; regenerable with `cascade train` on the pinned data
+artifacts/*.pkl
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# keep the provenance manifest (metadata, not raw data)
+!data/PROVENANCE.json

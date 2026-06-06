@@ -1,0 +1,10 @@
+{
+  "n_common_cell_lines": 315,
+  "n_common_genes": 16910,
+  "n_gene_celline_pairs": 5314323,
+  "r_raw_fitness": 0.8733,
+  "r_dlfc_deviation": 0.6488,
+  "collapse_delta": 0.2246,
+  "reproduces_documented_collapse_direction": true,
+  "reference": "Broad\u2194Sanger documented r 0.81 (raw) \u2192 0.47 (dLFC); exact dLFC magnitude is release/method dependent"
+}

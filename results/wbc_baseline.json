@@ -1,0 +1,58 @@
+{
+  "method": "WBC_Billmann2023",
+  "reference": "Billmann et al. 2023 Cell Systems PMID:37201508",
+  "trained_on_real_data": true,
+  "provenance_hash": "7ec08b796886e5a165ac5abc85fd075e431e807328cabccaaf242983ed8428c5",
+  "data_release": "DepMap Public 26Q1 CRISPRGeneEffect + Model (OncotreeLineage)",
+  "n_genes_scored": 18441,
+  "n_genes_total": 18531,
+  "n_abstained_pairs": 2607,
+  "auroc_overall": 0.596,
+  "auroc_cross_lab": 0.4311,
+  "auroc_cross_context": 0.4587,
+  "auroc_cross_study": 0.6461,
+  "abstention_rate": 0.0558,
+  "by_stratum": {
+    "cross_cell_type": {
+      "n": 219,
+      "n_kept": 210,
+      "abstention_rate": 0.0411,
+      "base_rate": 0.5342,
+      "auroc": 0.4703,
+      "ece": 0.4105
+    },
+    "cross_context": {
+      "n": 11536,
+      "n_kept": 11536,
+      "abstention_rate": 0.0,
+      "base_rate": 0.7357,
+      "auroc": 0.4587,
+      "ece": 0.5535
+    },
+    "cross_lab": {
+      "n": 19097,
+      "n_kept": 19096,
+      "abstention_rate": 0.0001,
+      "base_rate": 0.7649,
+      "auroc": 0.4311,
+      "ece": 0.5769
+    },
+    "cross_study": {
+      "n": 15712,
+      "n_kept": 13188,
+      "abstention_rate": 0.1606,
+      "base_rate": 0.2526,
+      "auroc": 0.6461,
+      "ece": 0.1574
+    },
+    "cross_study_same_cell": {
+      "n": 142,
+      "n_kept": 69,
+      "abstention_rate": 0.5141,
+      "base_rate": 0.2324,
+      "auroc": 0.5123,
+      "ece": 0.3697
+    }
+  },
+  "note": "WBC adapted to a per-gene replication-tendency score (z-scored Chronos concordance within vs between OncotreeLineage) and scored on the frozen benchmark; same-gene WBC regardless of context pair, no pair conditioning. Faithful citable adaptation, not the identical module-quality WBC."
+}

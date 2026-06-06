@@ -1,0 +1,28 @@
+{
+  "trained_on_real_data": true,
+  "overall_loso_auroc": 0.4075,
+  "n_studies_total": 158,
+  "n_studies_tested": 109,
+  "n_studies_too_small": 37,
+  "per_phenotype": {
+    "fitness": 0.5191,
+    "drug_response": 0.4962,
+    "other": 0.4822
+  },
+  "per_library": {
+    "other": 0.5192,
+    "GeCKO": 0.4832,
+    "Avana": 0.4834,
+    "Brunello": 0.5044,
+    "Tko": 0.5204
+  },
+  "per_quality_tertile": {
+    "low": 0.5056,
+    "high": 0.5364
+  },
+  "regression_r2": 0.071,
+  "dominant_factor": "library",
+  "interpretation": "LOSO AUROC is near/below chance because ORCS hit labels are defined per-study with study-specific thresholds and heterogeneous phenotype readouts. Unlike Broad\u2194Sanger (both fitness, common Chronos protocol), cross-study pairs mix viability, reporter and proliferation phenotypes across libraries \u2014 replication across incompatible readouts is not biologically expected, so a model trained on other studies transfers poorly (and can invert) on a held-out study.",
+  "recommendation": "Filter cross-study pairs to same-phenotype-class (fitness\u2194fitness) before training; report cross_study separately and do not pool its label with institute/context replication.",
+  "provenance_hash": "7ec08b796886e5a165ac5abc85fd075e431e807328cabccaaf242983ed8428c5"
+}

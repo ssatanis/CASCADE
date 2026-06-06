@@ -1,0 +1,28 @@
+# Pre-registered replication-label definition (frozen — never tuned on test).
+# Source of truth: cascade/src/cascade/corpus.py::build_pairs and orcs.py/replogle.py.
+# This file documents the rule; the code enforces it.
+
+version: "1.0"
+frozen: true
+
+fitness:                       # Broad↔Sanger (Chronos gene effect) + ORCS
+  hit_definition: "|beta_source| > theta"
+  theta: 0.5                   # Chronos gene-effect units (negative = dependency)
+  replication_label: "y = 1 if sign(beta_source) == sign(beta_target) AND |beta_target| > theta else 0"
+  rationale: "a hit replicates iff it is the same direction AND still a hit in the target context"
+  pair_types:
+    cross_lab: "Broad(source) -> Sanger(target), SAME cell line"
+    cross_context: "within-Broad, source cell line -> a DIFFERENT cell line"
+    cross_study: "BioGRID-ORCS, HIT concordance across two different studies"
+  caps: { max_cross_lab: 45000, max_cross_context: 20000, cross_context_per_hit: 2, orcs_max: 30000 }
+
+transcriptomic:                # scPerturb / Replogle 2022 (CRISPRi Perturb-seq)
+  signal: "scPerturb E-distance agreement of the perturbation's expression profile across contexts"
+  pair_type: cross_cell_type
+  contexts: ["K562", "RPE1"]
+  modality: CRISPRi
+
+never:
+  - "labels are NOT defined using any test-fold statistic"
+  - "theta and the sign rule are fixed across all splits and seeds"
+  - "fitness and transcriptomic labels are NEVER pooled into one metric"

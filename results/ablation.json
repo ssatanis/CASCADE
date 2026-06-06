@@ -1,0 +1,64 @@
+{
+  "trained_on_real_data": true,
+  "provenance_hash": "7ec08b796886e5a165ac5abc85fd075e431e807328cabccaaf242983ed8428c5",
+  "split": "context-holdout (cell lines + lineages + studies); same as oracle_v0.pkl, seed=0",
+  "n_train": 67385,
+  "n_test": 27545,
+  "variants": {
+    "A_logistic_only": {
+      "auroc_overall": 0.8601,
+      "auroc_cross_lab": 0.8707,
+      "auroc_cross_context": 0.8167,
+      "ece": 0.0632,
+      "brier": 0.1507,
+      "coverage": null,
+      "abstention": null
+    },
+    "B_plus_isotonic": {
+      "auroc_overall": 0.861,
+      "auroc_cross_lab": 0.8702,
+      "auroc_cross_context": 0.8161,
+      "ece": 0.0283,
+      "brier": 0.1455,
+      "coverage": null,
+      "abstention": null
+    },
+    "C_plus_conformal": {
+      "auroc_overall": 0.861,
+      "auroc_cross_lab": 0.8702,
+      "auroc_cross_context": 0.8161,
+      "ece": 0.0283,
+      "brier": 0.1455,
+      "coverage": 0.9278,
+      "abstention": null
+    },
+    "D_plus_provenance": {
+      "auroc_overall": 0.8616,
+      "auroc_cross_lab": 0.8679,
+      "auroc_cross_context": 0.8169,
+      "ece": 0.026,
+      "brier": 0.1454,
+      "coverage": 0.9269,
+      "abstention": null
+    },
+    "E_full_cascade": {
+      "auroc_overall": 0.8682,
+      "auroc_cross_lab": 0.8645,
+      "auroc_cross_context": 0.7803,
+      "ece": 0.0507,
+      "brier": 0.1463,
+      "coverage": 0.937,
+      "abstention": 0.3922
+    }
+  },
+  "delta_A_to_E": {
+    "auroc_overall": 0.0081,
+    "auroc_cross_lab": -0.0062,
+    "ece_A": 0.0632,
+    "ece_E": 0.0507
+  },
+  "notes": {
+    "monotone_components": "isotonic (B) and conformal (C) are monotone \u2192 AUROC(A)=AUROC(B)=AUROC(C) by construction; value is ECE\u2193 and coverage.",
+    "support_gate": "E evaluates AUROC on the non-abstained subset \u2192 exceeds D by trading coverage for accuracy."
+  }
+}

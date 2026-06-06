@@ -1,0 +1,142 @@
+{
+  "trained_on_real_data": true,
+  "data_releases": {
+    "broad": "DepMap Public 26Q1",
+    "sanger": "Sanger CRISPR (Project Score, Chronos) v2",
+    "orcs": "BioGRID-ORCS 2.0.18 (homo sapiens)",
+    "replogle": "scPerturb Zenodo 13350497 \u2014 Replogle 2022 K562/RPE1 Perturb-seq"
+  },
+  "provenance_hash": "7ec08b796886e5a165ac5abc85fd075e431e807328cabccaaf242983ed8428c5",
+  "training_date": "2026-06-06T03:34:37Z",
+  "theta": 0.5,
+  "seed": 0,
+  "corpus_stats": {
+    "n_pairs": 95955,
+    "by_pair_type": {
+      "cross_lab": 45000,
+      "cross_context": 19930,
+      "cross_study": 29777,
+      "cross_study_same_cell": 223,
+      "cross_cell_type": 1025
+    },
+    "by_source": {
+      "depmap_sanger": 64930,
+      "orcs": 30000,
+      "replogle": 1025
+    },
+    "by_task": {
+      "fitness": 94930,
+      "transcriptomic": 1025
+    },
+    "base_rate": 0.6085,
+    "n_non_hits": 37569
+  },
+  "split": {
+    "type": "context-holdout (cell lines + lineages + studies); Replogle held out entirely",
+    "n_train": 67385,
+    "n_test": 27545,
+    "n_holdout_cell_lines": 77,
+    "holdout_lineages": [
+      "Bone",
+      "Other",
+      "Skin",
+      "Soft Tissue"
+    ],
+    "n_holdout_studies": 32,
+    "n_replogle_pairs": 1025
+  },
+  "collapse": {
+    "n_common_cell_lines": 315,
+    "n_common_genes": 16910,
+    "n_gene_celline_pairs": 5314323,
+    "r_raw_fitness": 0.8733,
+    "r_dlfc_deviation": 0.6488,
+    "collapse_delta": 0.2246,
+    "reproduces_documented_collapse_direction": true,
+    "reference": "Broad\u2194Sanger documented r 0.81 (raw) \u2192 0.47 (dLFC); exact dLFC magnitude is release/method dependent"
+  },
+  "evaluation": {
+    "n_test": 27545,
+    "test_base_rate": 0.604973679433654,
+    "oracle": {
+      "auroc": 0.8682460696730308,
+      "ece": 0.05070214511594022,
+      "coverage": 0.9370445585951499,
+      "abstention_rate": 0.392194590669813,
+      "n_kept": 16742
+    },
+    "baselines": {
+      "mean_rate_auroc": 0.5,
+      "ridge_auroc": 0.858604903666307,
+      "ridge_ece": 0.09656606116123682,
+      "logistic_auroc": 0.8599715849766181,
+      "logistic_ece": 0.0611609553344947
+    },
+    "stratified_by_pair_type": {
+      "cross_context": {
+        "n": 8501,
+        "base_rate": 0.735,
+        "auroc": 0.7802812797821648,
+        "ece": 0.04125247719662741,
+        "coverage": 0.91189111747851,
+        "abstention_rate": 0.5073520762263264
+      },
+      "cross_lab": {
+        "n": 11034,
+        "base_rate": 0.776,
+        "auroc": 0.8644709861928948,
+        "ece": 0.02235089927811991,
+        "coverage": 0.9159163319019255,
+        "abstention_rate": 0.3457495015406924
+      },
+      "cross_study": {
+        "n": 7910,
+        "base_rate": 0.2322,
+        "auroc": 0.49414112707342,
+        "ece": 0.13622637180636848,
+        "coverage": 0.9851371951219512,
+        "abstention_rate": 0.33653603034134005
+      },
+      "cross_study_same_cell": {
+        "n": 100,
+        "base_rate": 0.17,
+        "auroc": 0.36070686070686075,
+        "ece": 0.20605892086269703,
+        "coverage": 1.0,
+        "abstention_rate": 0.13
+      }
+    },
+    "cross_cell_type_holdout": {
+      "n": 307,
+      "n_train": 718,
+      "base_rate": 0.5375,
+      "auroc": 0.6378844034859261,
+      "ece": 0.11243589154400536,
+      "coverage": 0.9575971731448764,
+      "abstention_rate": 0.07817589576547235,
+      "n_kept": 283,
+      "task": "transcriptomic",
+      "modality": "CRISPRi",
+      "note": "K562\u2192RPE1 transcriptomic replication; dedicated oracle, gene-disjoint holdout."
+    },
+    "cross_cell_type_pure_transfer": {
+      "n": 1025,
+      "abstention_rate": 1.0,
+      "n_kept": 0,
+      "note": "Fitness artifact on all Replogle pairs: abstains (correctly) \u2014 fitness does not transfer to transcriptomic."
+    }
+  },
+  "gate": {
+    "beats_mean": true,
+    "beats_ridge": true,
+    "coverage_ok": true,
+    "ece_ok": true,
+    "promote": true,
+    "coverage_target": 0.9,
+    "ece_max": 0.1
+  },
+  "n_common_cell_lines": 315,
+  "n_common_genes": 16910,
+  "artifact_path": "/Users/sahaj/Documents/Projects/SplicR/.claude/worktrees/practical-boyd-7e39ed/cascade/artifacts/oracle_v0.pkl",
+  "saved": true
+}

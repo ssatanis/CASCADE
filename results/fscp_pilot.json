@@ -1,0 +1,52 @@
+{
+  "parties": {
+    "A": "Broad (DepMap)",
+    "B": "Sanger (Project Score)"
+  },
+  "n_pairs": {
+    "A_broad": 11959,
+    "B_sanger": 11974
+  },
+  "n_train": {
+    "A": 7624,
+    "B": 7749
+  },
+  "n_test": 8560,
+  "auroc": {
+    "federated_AB": 0.8241,
+    "centralized_AB": 0.8401,
+    "A_only": 0.8156,
+    "B_only": 0.8173
+  },
+  "privacy": {
+    "epsilon_total_budget": 4.0,
+    "delta": 1e-06,
+    "noise_multiplier": 17.1858,
+    "rdp_epsilon_total_spent": 4.0,
+    "optimal_order": 8.4,
+    "n_rounds": 150,
+    "raw_data_crossed_boundary": false,
+    "note": "Conservative non-subsampled RDP bound; minibatch subsampling makes the true \u03b5 lower.",
+    "egress_sample": [
+      {
+        "round": 0,
+        "party": "A_broad",
+        "payload": "masked_dp_gradient",
+        "dim": 18,
+        "contains_raw_effect": false,
+        "contains_label": false,
+        "contains_per_gene_summary": false
+      },
+      {
+        "round": 0,
+        "party": "B_sanger",
+        "payload": "masked_dp_gradient",
+        "dim": 18,
+        "contains_raw_effect": false,
+        "contains_label": false,
+        "contains_per_gene_summary": false
+      }
+    ]
+  },
+  "melloddy_proof_federated_beats_alone": true
+}

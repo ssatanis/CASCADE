@@ -1,0 +1,369 @@
+{
+  "trained_on_real_data": true,
+  "provenance_hash": "7ec08b796886e5a165ac5abc85fd075e431e807328cabccaaf242983ed8428c5",
+  "model": "oracle_v0.pkl",
+  "n_genes_scored": 2092,
+  "n_common_essentials_loaded": 2172,
+  "top20_high_p_replicate": [
+    {
+      "gene": "FAU",
+      "mean_p": 0.9976,
+      "is_essential": true,
+      "n_pairs": 9
+    },
+    {
+      "gene": "RRM1",
+      "mean_p": 0.996,
+      "is_essential": true,
+      "n_pairs": 6
+    },
+    {
+      "gene": "SNRPD1",
+      "mean_p": 0.9956,
+      "is_essential": true,
+      "n_pairs": 6
+    },
+    {
+      "gene": "PRELID1",
+      "mean_p": 0.9952,
+      "is_essential": true,
+      "n_pairs": 10
+    },
+    {
+      "gene": "SNRPA1",
+      "mean_p": 0.994,
+      "is_essential": true,
+      "n_pairs": 6
+    },
+    {
+      "gene": "SNRPF",
+      "mean_p": 0.9936,
+      "is_essential": true,
+      "n_pairs": 6
+    },
+    {
+      "gene": "KIF11",
+      "mean_p": 0.9929,
+      "is_essential": true,
+      "n_pairs": 7
+    },
+    {
+      "gene": "PSMA6",
+      "mean_p": 0.9929,
+      "is_essential": true,
+      "n_pairs": 7
+    },
+    {
+      "gene": "RPS29",
+      "mean_p": 0.9927,
+      "is_essential": true,
+      "n_pairs": 9
+    },
+    {
+      "gene": "POLR2L",
+      "mean_p": 0.9925,
+      "is_essential": true,
+      "n_pairs": 7
+    },
+    {
+      "gene": "PUF60",
+      "mean_p": 0.9912,
+      "is_essential": true,
+      "n_pairs": 14
+    },
+    {
+      "gene": "RPL3",
+      "mean_p": 0.991,
+      "is_essential": true,
+      "n_pairs": 9
+    },
+    {
+      "gene": "RPS8",
+      "mean_p": 0.991,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "POLD1",
+      "mean_p": 0.9908,
+      "is_essential": true,
+      "n_pairs": 7
+    },
+    {
+      "gene": "PLK1",
+      "mean_p": 0.9908,
+      "is_essential": true,
+      "n_pairs": 7
+    },
+    {
+      "gene": "SF3B3",
+      "mean_p": 0.9907,
+      "is_essential": true,
+      "n_pairs": 12
+    },
+    {
+      "gene": "RPS19",
+      "mean_p": 0.9905,
+      "is_essential": true,
+      "n_pairs": 8
+    },
+    {
+      "gene": "SNRNP200",
+      "mean_p": 0.9905,
+      "is_essential": true,
+      "n_pairs": 15
+    },
+    {
+      "gene": "RPL31",
+      "mean_p": 0.9905,
+      "is_essential": true,
+      "n_pairs": 10
+    },
+    {
+      "gene": "SRSF2",
+      "mean_p": 0.9905,
+      "is_essential": true,
+      "n_pairs": 10
+    }
+  ],
+  "bottom20_low_p_replicate": [
+    {
+      "gene": "ARHGEF5",
+      "mean_p": 0.3581,
+      "is_essential": false,
+      "n_pairs": 5
+    },
+    {
+      "gene": "EXOC7",
+      "mean_p": 0.3649,
+      "is_essential": false,
+      "n_pairs": 7
+    },
+    {
+      "gene": "ARHGAP11A",
+      "mean_p": 0.3744,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "LSM14A",
+      "mean_p": 0.3823,
+      "is_essential": true,
+      "n_pairs": 6
+    },
+    {
+      "gene": "KHSRP",
+      "mean_p": 0.3849,
+      "is_essential": false,
+      "n_pairs": 5
+    },
+    {
+      "gene": "SMARCD1",
+      "mean_p": 0.3891,
+      "is_essential": false,
+      "n_pairs": 6
+    },
+    {
+      "gene": "DDRGK1",
+      "mean_p": 0.3899,
+      "is_essential": false,
+      "n_pairs": 6
+    },
+    {
+      "gene": "ZC3H13",
+      "mean_p": 0.402,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "CABP4",
+      "mean_p": 0.4059,
+      "is_essential": false,
+      "n_pairs": 5
+    },
+    {
+      "gene": "RCOR2",
+      "mean_p": 0.406,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "MEMO1",
+      "mean_p": 0.4062,
+      "is_essential": false,
+      "n_pairs": 7
+    },
+    {
+      "gene": "TAF5L",
+      "mean_p": 0.4062,
+      "is_essential": false,
+      "n_pairs": 8
+    },
+    {
+      "gene": "VTI1B",
+      "mean_p": 0.4091,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "COQ2",
+      "mean_p": 0.4106,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "ARPP19",
+      "mean_p": 0.412,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "SERINC4",
+      "mean_p": 0.4123,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "CA5A",
+      "mean_p": 0.413,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "RAC3",
+      "mean_p": 0.4156,
+      "is_essential": false,
+      "n_pairs": 7
+    },
+    {
+      "gene": "INS",
+      "mean_p": 0.4206,
+      "is_essential": true,
+      "n_pairs": 5
+    },
+    {
+      "gene": "TBL1Y",
+      "mean_p": 0.4215,
+      "is_essential": false,
+      "n_pairs": 12
+    }
+  ],
+  "essential_enrichment_top20": {
+    "odds_ratio": null,
+    "p_value": 0.009333810676894164,
+    "n_essential_in_group": 20,
+    "group_size": 20,
+    "significant_bonferroni": true
+  },
+  "essential_enrichment_bottom20": {
+    "odds_ratio": 0.25728155339805825,
+    "p_value": 0.0032961006982744636,
+    "n_essential_in_group": 10,
+    "interpretation": "depletion test (essentials under-represented in low-P genes)"
+  },
+  "bottom20_chronos_variance": {
+    "ARHGEF5": 0.0463,
+    "EXOC7": 0.0276,
+    "ARHGAP11A": 0.0527,
+    "LSM14A": 0.0339,
+    "KHSRP": 0.0648,
+    "SMARCD1": 0.0657,
+    "DDRGK1": 0.0306,
+    "ZC3H13": 0.0826,
+    "CABP4": 0.0278,
+    "RCOR2": 0.0292,
+    "MEMO1": 0.0353,
+    "TAF5L": 0.1194,
+    "VTI1B": 0.0375,
+    "COQ2": 0.0449,
+    "ARPP19": 0.0508,
+    "SERINC4": 0.0225,
+    "CA5A": 0.0424,
+    "RAC3": 0.0348,
+    "INS": 0.0321,
+    "TBL1Y": 0.0161
+  },
+  "case_studies": [
+    {
+      "gene": "FAU",
+      "p_replicate": 0.9976,
+      "ci": [
+        0.372,
+        1.0
+      ],
+      "is_essential": true,
+      "effect": {
+        "broad_mean_effect": -2.996,
+        "sanger_mean_effect": -2.312,
+        "sign_agree": true
+      },
+      "n_pairs": 9,
+      "rationale": "core essential \u2014 depleted in essentially every lineage, so it replicates everywhere"
+    },
+    {
+      "gene": "RRM1",
+      "p_replicate": 0.996,
+      "ci": [
+        0.372,
+        1.0
+      ],
+      "is_essential": true,
+      "effect": {
+        "broad_mean_effect": -3.174,
+        "sanger_mean_effect": -2.6,
+        "sign_agree": true
+      },
+      "n_pairs": 6,
+      "rationale": "core essential \u2014 depleted in essentially every lineage, so it replicates everywhere"
+    },
+    {
+      "gene": "ARHGEF5",
+      "p_replicate": 0.3581,
+      "ci": [
+        0.0,
+        0.961
+      ],
+      "is_essential": false,
+      "effect": {
+        "broad_mean_effect": -0.379,
+        "sanger_mean_effect": -0.26,
+        "sign_agree": true
+      },
+      "n_pairs": 5,
+      "rationale": "context-specific / likely oncogene-addicted \u2014 strong only in some lineages, so cross-lab replication is uncertain"
+    },
+    {
+      "gene": "EXOC7",
+      "p_replicate": 0.3649,
+      "ci": [
+        0.0,
+        0.961
+      ],
+      "is_essential": false,
+      "effect": {
+        "broad_mean_effect": -0.407,
+        "sanger_mean_effect": -0.013,
+        "sign_agree": true
+      },
+      "n_pairs": 7,
+      "rationale": "context-specific / likely oncogene-addicted \u2014 strong only in some lineages, so cross-lab replication is uncertain"
+    },
+    {
+      "gene": "CASC3",
+      "p_replicate": 0.5,
+      "ci": [
+        0.0,
+        0.982
+      ],
+      "is_essential": true,
+      "effect": {
+        "broad_mean_effect": -0.411,
+        "sanger_mean_effect": -0.353,
+        "sign_agree": true
+      },
+      "n_pairs": 6,
+      "rationale": "ambiguous \u2014 near the decision boundary; effect size or QC borderline"
+    }
+  ],
+  "finding": "CASCADE assigns high P(replicate) to core essential genes (ribosomal/proteasome/spliceosome) and low P(replicate) to context-specific genes, consistent with known CRISPR-screen biology: pan-essential dependencies reproduce across labs, lineage-restricted dependencies do not."
+}

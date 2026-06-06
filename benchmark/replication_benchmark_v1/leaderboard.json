@@ -1,0 +1,262 @@
+{
+  "CASCADE_v0": {
+    "overall": {
+      "n": 46706,
+      "n_kept": 27660,
+      "abstention_rate": 0.4078,
+      "base_rate": 0.5827,
+      "auroc": 0.8488,
+      "ece": 0.0355
+    },
+    "by_stratum": {
+      "cross_cell_type": {
+        "n": 219,
+        "n_kept": 213,
+        "abstention_rate": 0.0274,
+        "base_rate": 0.5342,
+        "auroc": 0.6175,
+        "ece": 0.0925
+      },
+      "cross_context": {
+        "n": 11536,
+        "n_kept": 5386,
+        "abstention_rate": 0.5331,
+        "base_rate": 0.7357,
+        "auroc": 0.7805,
+        "ece": 0.0407
+      },
+      "cross_lab": {
+        "n": 19097,
+        "n_kept": 13624,
+        "abstention_rate": 0.2866,
+        "base_rate": 0.7649,
+        "auroc": 0.862,
+        "ece": 0.019
+      },
+      "cross_study": {
+        "n": 15712,
+        "n_kept": 8327,
+        "abstention_rate": 0.47,
+        "base_rate": 0.2526,
+        "auroc": 0.5265,
+        "ece": 0.0893
+      },
+      "cross_study_same_cell": {
+        "n": 142,
+        "n_kept": 110,
+        "abstention_rate": 0.2254,
+        "base_rate": 0.2324,
+        "auroc": 0.2883,
+        "ece": 0.1723
+      }
+    }
+  },
+  "baseline_mean_rate": {
+    "overall": {
+      "n": 46706,
+      "n_kept": 46706,
+      "abstention_rate": 0.0,
+      "base_rate": 0.5827,
+      "auroc": 0.5,
+      "ece": 0.0503
+    },
+    "by_stratum": {
+      "cross_cell_type": {
+        "n": 219,
+        "n_kept": 219,
+        "abstention_rate": 0.0,
+        "base_rate": 0.5342,
+        "auroc": 0.5,
+        "ece": 0.0987
+      },
+      "cross_context": {
+        "n": 11536,
+        "n_kept": 11536,
+        "abstention_rate": 0.0,
+        "base_rate": 0.7357,
+        "auroc": 0.5,
+        "ece": 0.1028
+      },
+      "cross_lab": {
+        "n": 19097,
+        "n_kept": 19097,
+        "abstention_rate": 0.0,
+        "base_rate": 0.7649,
+        "auroc": 0.5,
+        "ece": 0.132
+      },
+      "cross_study": {
+        "n": 15712,
+        "n_kept": 15712,
+        "abstention_rate": 0.0,
+        "base_rate": 0.2526,
+        "auroc": 0.5,
+        "ece": 0.3803
+      },
+      "cross_study_same_cell": {
+        "n": 142,
+        "n_kept": 142,
+        "abstention_rate": 0.0,
+        "base_rate": 0.2324,
+        "auroc": 0.5,
+        "ece": 0.4006
+      }
+    }
+  },
+  "baseline_ridge": {
+    "overall": {
+      "n": 46706,
+      "n_kept": 46706,
+      "abstention_rate": 0.0,
+      "base_rate": 0.5827,
+      "auroc": 0.7584,
+      "ece": 0.0396
+    },
+    "by_stratum": {
+      "cross_cell_type": {
+        "n": 219,
+        "n_kept": 219,
+        "abstention_rate": 0.0,
+        "base_rate": 0.5342,
+        "auroc": 0.6117,
+        "ece": 0.1483
+      },
+      "cross_context": {
+        "n": 11536,
+        "n_kept": 11536,
+        "abstention_rate": 0.0,
+        "base_rate": 0.7357,
+        "auroc": 0.5987,
+        "ece": 0.0276
+      },
+      "cross_lab": {
+        "n": 19097,
+        "n_kept": 19097,
+        "abstention_rate": 0.0,
+        "base_rate": 0.7649,
+        "auroc": 0.5621,
+        "ece": 0.0074
+      },
+      "cross_study": {
+        "n": 15712,
+        "n_kept": 15712,
+        "abstention_rate": 0.0,
+        "base_rate": 0.2526,
+        "auroc": 0.5111,
+        "ece": 0.0856
+      },
+      "cross_study_same_cell": {
+        "n": 142,
+        "n_kept": 142,
+        "abstention_rate": 0.0,
+        "base_rate": 0.2324,
+        "auroc": 0.2263,
+        "ece": 0.143
+      }
+    }
+  },
+  "WBC_Billmann2023": {
+    "overall": {
+      "n": 46706,
+      "n_kept": 44099,
+      "abstention_rate": 0.0558,
+      "base_rate": 0.5827,
+      "auroc": 0.596,
+      "ece": 0.4441
+    },
+    "by_stratum": {
+      "cross_cell_type": {
+        "n": 219,
+        "n_kept": 210,
+        "abstention_rate": 0.0411,
+        "base_rate": 0.5342,
+        "auroc": 0.4703,
+        "ece": 0.4105
+      },
+      "cross_context": {
+        "n": 11536,
+        "n_kept": 11536,
+        "abstention_rate": 0.0,
+        "base_rate": 0.7357,
+        "auroc": 0.4587,
+        "ece": 0.5535
+      },
+      "cross_lab": {
+        "n": 19097,
+        "n_kept": 19096,
+        "abstention_rate": 0.0001,
+        "base_rate": 0.7649,
+        "auroc": 0.4311,
+        "ece": 0.5769
+      },
+      "cross_study": {
+        "n": 15712,
+        "n_kept": 13188,
+        "abstention_rate": 0.1606,
+        "base_rate": 0.2526,
+        "auroc": 0.6461,
+        "ece": 0.1574
+      },
+      "cross_study_same_cell": {
+        "n": 142,
+        "n_kept": 69,
+        "abstention_rate": 0.5141,
+        "base_rate": 0.2324,
+        "auroc": 0.5123,
+        "ece": 0.3697
+      }
+    }
+  },
+  "MAIC_approx (IC formula)": {
+    "overall": {
+      "n": 46706,
+      "n_kept": 43451,
+      "abstention_rate": 0.0697,
+      "base_rate": 0.5827,
+      "auroc": 0.9045,
+      "ece": 0.2892
+    },
+    "by_stratum": {
+      "cross_cell_type": {
+        "n": 219,
+        "n_kept": 205,
+        "abstention_rate": 0.0639,
+        "base_rate": 0.5342,
+        "auroc": 0.5447,
+        "ece": 0.1368
+      },
+      "cross_context": {
+        "n": 11536,
+        "n_kept": 11536,
+        "abstention_rate": 0.0,
+        "base_rate": 0.7357,
+        "auroc": 0.9123,
+        "ece": 0.3123
+      },
+      "cross_lab": {
+        "n": 19097,
+        "n_kept": 19097,
+        "abstention_rate": 0.0,
+        "base_rate": 0.7649,
+        "auroc": 0.9191,
+        "ece": 0.3421
+      },
+      "cross_study": {
+        "n": 15712,
+        "n_kept": 12548,
+        "abstention_rate": 0.2014,
+        "base_rate": 0.2526,
+        "auroc": 0.7378,
+        "ece": 0.1937
+      },
+      "cross_study_same_cell": {
+        "n": 142,
+        "n_kept": 65,
+        "abstention_rate": 0.5423,
+        "base_rate": 0.2324,
+        "auroc": 0.7462,
+        "ece": 0.4321
+      }
+    }
+  }
+}

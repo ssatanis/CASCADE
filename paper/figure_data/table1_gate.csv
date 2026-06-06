@@ -1,0 +1,3 @@
+scheme,auroc_oracle,auroc_b4,auroc_b5,delta_vs_b4,p_vs_b4_max,delta_vs_b5,p_vs_b5_max,coverage,GATE_PASS
+loco_cellline,0.8491,0.712,0.7064,0.1371,0.0,0.1427,0.0,0.9243,True
+loso_study,0.4094,0.6168,0.6094,-0.2074,8.686522614600535e-244,-0.2,2.05524285479463e-228,0.9442,False

@@ -1,0 +1,41 @@
+{
+  "name": "CASCADE Replication Benchmark v1",
+  "version": "1.0",
+  "frozen_at": "2026-06-06T03:38:39Z",
+  "provenance_hash": "7ec08b796886e5a165ac5abc85fd075e431e807328cabccaaf242983ed8428c5",
+  "data_releases": {
+    "broad": "DepMap Public 26Q1",
+    "sanger": "Sanger Project Score Chronos v2",
+    "orcs": "BioGRID-ORCS 2.0.18 (homo sapiens)",
+    "replogle": "scPerturb Zenodo 13350497 (Replogle 2022 K562/RPE1)"
+  },
+  "task_definition": "Predict whether a screen hit replicates in another lab/context (binary y_rep), with calibrated probability + honest abstention.",
+  "strata": {
+    "cross_lab": "institute replication (Broad\u2194Sanger, same cell line)",
+    "cross_context": "within-Broad, different cell line",
+    "cross_study": "BioGRID-ORCS, different study (HIT concordance)",
+    "cross_cell_type": "Replogle K562\u2194RPE1, transcriptomic (distinct task)"
+  },
+  "split_policy": "DISJOINT by cell line AND lineage AND study AND gene (test touches a holdout on any axis; train touches none).",
+  "leakage_check": {
+    "train_test_cellline_disjoint_on_holdout": true,
+    "train_test_gene_disjoint_on_holdout": true,
+    "n_train": 49249,
+    "n_test": 46706
+  },
+  "metrics": [
+    "AUROC",
+    "ECE",
+    "conformal_coverage",
+    "abstention_rate"
+  ],
+  "n_test": 46706,
+  "n_test_by_stratum": {
+    "cross_lab": 19097,
+    "cross_context": 11536,
+    "cross_study": 15712,
+    "cross_study_same_cell": 142,
+    "cross_cell_type": 219
+  },
+  "license": "CC BY 4.0 (derived from CC BY 4.0 / MIT sources; see data/PROVENANCE.json)"
+}

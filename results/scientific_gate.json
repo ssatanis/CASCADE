@@ -1,0 +1,280 @@
+{
+  "run": {
+    "kind": "honesty_scientific_gate",
+    "generated_at": "2026-06-06T16:01:20Z",
+    "task": "fitness",
+    "n_pairs": 94930,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "by_pair_type": {
+      "cross_lab": 45000,
+      "cross_context": 19930,
+      "cross_study": 29777,
+      "cross_study_same_cell": 223
+    },
+    "by_source": {
+      "depmap_sanger": 64930,
+      "orcs": 30000
+    },
+    "base_rate": 0.6087
+  },
+  "schemes": {
+    "loco_cellline": {
+      "scheme": "loco_cellline",
+      "n_seeds": 5,
+      "caps": {
+        "train_cap": 25000,
+        "eval_cap": 6000,
+        "note": "per-fold seeded subsample; identical points across Oracle/B4/B5 \u2192 fair DeLong"
+      },
+      "auroc_oracle_mean": 0.8491,
+      "auroc_oracle_sd": 0.0021,
+      "auroc_b4_mean": 0.712,
+      "auroc_b5_mean": 0.7064,
+      "delta_vs_b4_mean": 0.1371,
+      "delta_vs_b5_mean": 0.1427,
+      "p_vs_b4_max": 0.0,
+      "p_vs_b5_max": 0.0,
+      "conformal_coverage_mean": 0.9243,
+      "conformal_coverage_min": 0.9202,
+      "coverage_holds_all_seeds": true,
+      "abstention_rate_mean": 0.255,
+      "beats_b4_all_seeds": true,
+      "beats_b5_all_seeds": true,
+      "GATE_PASS": true,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_kept": 22375,
+          "n_total": 30000,
+          "n_groups": 1012,
+          "abstention_rate": 0.2542,
+          "auroc_oracle": 0.8519,
+          "auroc_b4": 0.7171,
+          "auroc_b5": 0.7073,
+          "delta_vs_b4": 0.1348,
+          "p_vs_b4": 0.0,
+          "delta_vs_b5": 0.1446,
+          "p_vs_b5": 0.0,
+          "conformal_coverage": 0.9215,
+          "ece": 0.0145,
+          "brier": 0.1498
+        },
+        {
+          "seed": 1,
+          "n_kept": 22411,
+          "n_total": 30000,
+          "n_groups": 1012,
+          "abstention_rate": 0.253,
+          "auroc_oracle": 0.8467,
+          "auroc_b4": 0.7096,
+          "auroc_b5": 0.7084,
+          "delta_vs_b4": 0.1371,
+          "p_vs_b4": 0.0,
+          "delta_vs_b5": 0.1383,
+          "p_vs_b5": 0.0,
+          "conformal_coverage": 0.9267,
+          "ece": 0.0117,
+          "brier": 0.152
+        },
+        {
+          "seed": 2,
+          "n_kept": 22319,
+          "n_total": 30000,
+          "n_groups": 1012,
+          "abstention_rate": 0.256,
+          "auroc_oracle": 0.8492,
+          "auroc_b4": 0.7117,
+          "auroc_b5": 0.7041,
+          "delta_vs_b4": 0.1375,
+          "p_vs_b4": 0.0,
+          "delta_vs_b5": 0.1451,
+          "p_vs_b5": 0.0,
+          "conformal_coverage": 0.925,
+          "ece": 0.013,
+          "brier": 0.1518
+        },
+        {
+          "seed": 3,
+          "n_kept": 22387,
+          "n_total": 30000,
+          "n_groups": 1012,
+          "abstention_rate": 0.2538,
+          "auroc_oracle": 0.8509,
+          "auroc_b4": 0.7149,
+          "auroc_b5": 0.7094,
+          "delta_vs_b4": 0.136,
+          "p_vs_b4": 0.0,
+          "delta_vs_b5": 0.1414,
+          "p_vs_b5": 0.0,
+          "conformal_coverage": 0.9202,
+          "ece": 0.0158,
+          "brier": 0.1506
+        },
+        {
+          "seed": 4,
+          "n_kept": 22261,
+          "n_total": 30000,
+          "n_groups": 1012,
+          "abstention_rate": 0.258,
+          "auroc_oracle": 0.8469,
+          "auroc_b4": 0.7068,
+          "auroc_b5": 0.7028,
+          "delta_vs_b4": 0.1401,
+          "p_vs_b4": 0.0,
+          "delta_vs_b5": 0.1441,
+          "p_vs_b5": 0.0,
+          "conformal_coverage": 0.9283,
+          "ece": 0.0157,
+          "brier": 0.1519
+        }
+      ]
+    },
+    "loco_lineage": {
+      "scheme": "loco_lineage",
+      "status": "insufficient_groups_or_data"
+    },
+    "loso_study": {
+      "scheme": "loso_study",
+      "n_seeds": 5,
+      "caps": {
+        "train_cap": 25000,
+        "eval_cap": 6000,
+        "note": "per-fold seeded subsample; identical points across Oracle/B4/B5 \u2192 fair DeLong"
+      },
+      "auroc_oracle_mean": 0.4094,
+      "auroc_oracle_sd": 0.0038,
+      "auroc_b4_mean": 0.6168,
+      "auroc_b5_mean": 0.6094,
+      "delta_vs_b4_mean": -0.2074,
+      "delta_vs_b5_mean": -0.2,
+      "p_vs_b4_max": 8.686522614600535e-244,
+      "p_vs_b5_max": 2.05524285479463e-228,
+      "conformal_coverage_mean": 0.9442,
+      "conformal_coverage_min": 0.9396,
+      "coverage_holds_all_seeds": true,
+      "abstention_rate_mean": 0.2342,
+      "beats_b4_all_seeds": false,
+      "beats_b5_all_seeds": false,
+      "GATE_PASS": false,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_kept": 22808,
+          "n_total": 29999,
+          "n_groups": 158,
+          "abstention_rate": 0.2397,
+          "auroc_oracle": 0.4157,
+          "auroc_b4": 0.6169,
+          "auroc_b5": 0.609,
+          "delta_vs_b4": -0.2012,
+          "p_vs_b4": 8.686522614600535e-244,
+          "delta_vs_b5": -0.1933,
+          "p_vs_b5": 2.05524285479463e-228,
+          "conformal_coverage": 0.9444,
+          "ece": 0.1168,
+          "brier": 0.207
+        },
+        {
+          "seed": 1,
+          "n_kept": 22964,
+          "n_total": 29999,
+          "n_groups": 158,
+          "abstention_rate": 0.2345,
+          "auroc_oracle": 0.4083,
+          "auroc_b4": 0.6164,
+          "auroc_b5": 0.609,
+          "delta_vs_b4": -0.2081,
+          "p_vs_b4": 5.387632926497874e-266,
+          "delta_vs_b5": -0.2007,
+          "p_vs_b5": 2.278515454110814e-249,
+          "conformal_coverage": 0.9482,
+          "ece": 0.1256,
+          "brier": 0.2083
+        },
+        {
+          "seed": 2,
+          "n_kept": 23066,
+          "n_total": 29999,
+          "n_groups": 158,
+          "abstention_rate": 0.2311,
+          "auroc_oracle": 0.4094,
+          "auroc_b4": 0.6192,
+          "auroc_b5": 0.6108,
+          "delta_vs_b4": -0.2099,
+          "p_vs_b4": 9.43402344228417e-264,
+          "delta_vs_b5": -0.2014,
+          "p_vs_b5": 6.153870852243573e-246,
+          "conformal_coverage": 0.9396,
+          "ece": 0.1375,
+          "brier": 0.2083
+        },
+        {
+          "seed": 3,
+          "n_kept": 22949,
+          "n_total": 29999,
+          "n_groups": 158,
+          "abstention_rate": 0.235,
+          "auroc_oracle": 0.4039,
+          "auroc_b4": 0.6159,
+          "auroc_b5": 0.6095,
+          "delta_vs_b4": -0.212,
+          "p_vs_b4": 1.497191968370199e-284,
+          "delta_vs_b5": -0.2056,
+          "p_vs_b5": 1.9432159547575274e-269,
+          "conformal_coverage": 0.9449,
+          "ece": 0.1312,
+          "brier": 0.2069
+        },
+        {
+          "seed": 4,
+          "n_kept": 23076,
+          "n_total": 29999,
+          "n_groups": 158,
+          "abstention_rate": 0.2308,
+          "auroc_oracle": 0.4099,
+          "auroc_b4": 0.6155,
+          "auroc_b5": 0.6088,
+          "delta_vs_b4": -0.2056,
+          "p_vs_b4": 3.709801703689945e-259,
+          "delta_vs_b5": -0.1989,
+          "p_vs_b5": 3.220245427739955e-245,
+          "conformal_coverage": 0.944,
+          "ece": 0.1375,
+          "brier": 0.2086
+        }
+      ]
+    }
+  },
+  "summary": {
+    "loco_cellline": {
+      "GATE_PASS": true,
+      "auroc_oracle": 0.8491,
+      "auroc_b4": 0.712,
+      "auroc_b5": 0.7064,
+      "beats_b4": true,
+      "beats_b5": true
+    },
+    "loco_lineage": {
+      "GATE_PASS": null,
+      "auroc_oracle": null,
+      "auroc_b4": null,
+      "auroc_b5": null,
+      "beats_b4": null,
+      "beats_b5": null
+    },
+    "loso_study": {
+      "GATE_PASS": false,
+      "auroc_oracle": 0.4094,
+      "auroc_b4": 0.6168,
+      "auroc_b5": 0.6094,
+      "beats_b4": false,
+      "beats_b5": false
+    }
+  }
+}

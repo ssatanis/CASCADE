@@ -1,0 +1,7 @@
+figure_or_table,description,generator_command,artifact_json,underlying_numbers_csv
+Table1,Master baseline comparison (Oracle vs B4 additive vs B5 group-prior) under LOCO/LOSO,cascade gate --seeds 0 1 2 3 4,results/scientific_gate.json,paper/figure_data/table1_gate.csv
+Fig2,Reliability diagrams (overall + per stratum) with bin counts,cascade phase3 --seeds 0 1 2 3 4 && python -m cascade.paper_figures,results/phase3_evaluation.json,paper/figure_data/fig2_reliability.csv
+Fig3,Per-stratum AUROC with DeLong 95% CI bars,cascade phase3 --seeds 0 1 2 3 4 && python -m cascade.paper_figures,results/phase3_evaluation.json,paper/figure_data/fig3_per_stratum_auroc.csv
+Table3,Negative-control nulls (permuted-label / scrambled-score) + leakage audit,cascade phase3 --seeds 0 1 2 3 4,results/phase3_evaluation.json,results/phase3_evaluation.json (negative_controls / leakage_audit)
+Fig6,Broad-Sanger replication-collapse reproduction (raw vs dLFC),cascade collapse,results/real_collapse.json,results/real_collapse.json
+Table4,Federation (FSCP) 2-party lift + DP accounting,cascade fscp-pilot,results/fscp_pilot.json,results/fscp_pilot.json

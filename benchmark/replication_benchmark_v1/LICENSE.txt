@@ -1,0 +1,13 @@
+CASCADE Replication Benchmark v1 — License
+
+This benchmark (the held-out test pairs, manifest, and leaderboard) is released
+under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+It is DERIVED from:
+  - DepMap Public 26Q1 (Broad)            — CC BY 4.0
+  - Sanger Project Score (Chronos v2)     — CC BY 4.0
+  - BioGRID-ORCS 2.0.18                    — BioGRID-ORCS terms (free academic + commercial)
+  - Replogle et al. 2022 via scPerturb     — CC BY 4.0
+
+Attribute CASCADE and the underlying datasets (see manifest.json for exact
+releases and data/PROVENANCE.json for sha256 provenance).
